@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Notas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Notas</h1>
+    <div id="input-form">
+        <label for="cedula">Cédula de Identidad:</label>
+        <input type="text" id="cedula" placeholder="Ingrese la cédula">
+
+        <label for="nombre">Nombre del Alumno:</label>
+        <input type="text" id="nombre" placeholder="Ingrese el nombre">
+
+        <label for="matematica">Nota de Matemática:</label>
+        <input type="number" id="matematica" placeholder="Ingrese la nota">
+
+        <label for="fisica">Nota de Física:</label>
+        <input type="number" id="fisica" placeholder="Ingrese la nota">
+
+        <label for="programacion">Nota de Programación:</label>
+        <input type="number" id="programacion" placeholder="Ingrese la nota">
+
+        <button onclick="agregarAlumno()">Agregar Alumno</button>
+    </div>
+
+    <div id="alumnos-lista">
+        <h2>Lista de Alumnos:</h2>
+        <table id="alumnos-table">
+            <tr>
+                <th>Cédula</th>
+                <th>Nombre</th>
+                <th>Matemática</th>
+                <th>Física</th>
+                <th>Programación</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="resultado">
+        <h2>Resultados:</h2>
+        <table id="resultado-table">
+            <tr>
+                <th>Materia</th>
+                <th>Nota Promedio</th>
+                <th>Aprobados</th>
+                <th>Aplazados</th>
+            </tr>
+            <tr>
+                <td>Matemática</td>
+                <td id="promedio-matematica"></td>
+                <td id="aprobados-matematica"></td>
+                <td id="aplazados-matematica"></td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td id="promedio-fisica"></td>
+                <td id="aprobados-fisica"></td>
+                <td id="aplazados-fisica"></td>
+            </tr>
+            <tr>
+                <td>Programación</td>
+                <td id="promedio-programacion"></td>
+                <td id="aprobados-programacion"></td>
+                <td id="aplazados-programacion"></td>
+            </tr>
+        </table>
+
+        <p id="aprobados-todas"></p>
+        <p id="aprobados-una"></p>
+        <p id="aprobados-dos"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
